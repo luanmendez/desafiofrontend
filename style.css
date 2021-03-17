@@ -13,7 +13,7 @@ h1{
     color: #FF0000;
     font-size: clamp(10px, 1em + 1vw, 2em);
 }
-p{
+p, label{
     font-size: 10px !important;
     margin: 10px;
 }
@@ -66,11 +66,7 @@ img {
     align-items: center;
 }
 .box-login{
-    background-color: #FFF;
-    /* background-image: url('/assets/img.jpg');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: auto 100%; */
+    background-color: #FFF;    
     width: 50vw;
     height: 65vh;
     display: flex;
@@ -125,17 +121,35 @@ img {
 .flex-inline{
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content:flex-start;
     width: 250px;
     margin-bottom: 10px;
 }
 
-.check{
-    width: 20px;
-    height: 20px;
+.btn-group{
+    justify-content:space-between !important;
 }
-.check:checked{
-    background-color: #FF0000;
+
+.check input{
+    display: none;
+}
+.check input + label:before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    background: #F2F6FA;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.check input:checked + label:before{
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #FF171B ;
+    background-position: center;
+    border:none;
+    padding: 1px;
 }
 
 .btn{
@@ -170,7 +184,7 @@ img {
         height: 100%;
     }
     .bg-img{
-        width: 0%;
+       display: none;
     }
 
 
