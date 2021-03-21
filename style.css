@@ -27,35 +27,27 @@ img {
 .input-text  {
     background-color: #F2F6FA;
     margin: 5px;
-    font-size: 16px;
+    font-size: 12px;
     border: 1px solid #ACC9E6;
+    color: #1d2125;
     width: 250px;
     height: 30px;
     border-radius: 3px;
+    padding-left: 10px;
 }
 .input-text::-ms-input-placeholder  {
-    font-size:10px;
     color: #ACC9E6;
-    padding: 10px;
-
   }
 
   .input-text::-webkit-input-placeholder {
-    font-size:10px;
     color: #ACC9E6;
-    padding: 10px;
   }
 
   .input-text:-moz-placeholder {
-    font-size:10px;
     color: #ACC9E6;
-    padding: 10px;
-
   }
   .input-text::-moz-placeholder {
-    font-size:10px;
     color: #ACC9E6;
-    padding-left: 10px;
   }
 
 .container{
